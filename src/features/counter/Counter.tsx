@@ -68,10 +68,12 @@ function Counter() {
         onChange={(e) => setAddAsync(Number(e.target.value))}
       />
       <button
+        className={status === "Pending" ? "disabled" : ""}
         type="button"
         onClick={() => dispatch(incrementByAsync(addAsync))}
+        disabled={status === "Pending" ? true : false}
       >
-        Add Async
+        {status === "Pending" ? "Loading..." : "Add Async"}
       </button>
       <br />
     </div>

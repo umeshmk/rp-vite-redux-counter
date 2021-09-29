@@ -53,6 +53,12 @@ button:hover {
   color: #999;
 }
 
+button.disabled {
+  background-color: #61dafb;
+  color: #282c34;
+  cursor: default;
+}
+
 input {
   padding: 0.55rem;
   font-size: 2rem;
