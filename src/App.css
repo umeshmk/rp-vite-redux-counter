@@ -43,4 +43,44 @@ button {
   border: 1px solid #777;
   background-color: #282c34;
   color: #777;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+button:hover {
+  border: 1px solid #999;
+  background-color: #282c34;
+  color: #999;
+}
+
+input {
+  padding: 0.55rem;
+  font-size: 2rem;
+  width: 50px;
+}
+.status {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.error {
+  font-family: monospace;
+  font-size: 1.2rem;
+}
+
+.idle {
+  color: antiquewhite;
+}
+.pending {
+  color: #61dafb;
+}
+.success {
+  color: lawngreen;
+}
+.failure {
+  color: crimson;
+}
+
+.github {
+  color: #61dafb;
+  text-decoration: none;
 }
